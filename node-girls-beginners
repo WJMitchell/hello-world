@@ -4,8 +4,10 @@ var first  = "node girls";
 var second = 123;
 var third  = false;
 var happy  = false;
-var x      = 11
-var i      = 1
+var x      = 11;
+var i      = 1;
+var j      = 0
+var animals = ["tiger", "giraffe", "snake", "llama"];
 
 // checking typeof functionality
 console.log(typeof (first),typeof (second),typeof (third)); // there must be a way to not have to repeat typeof each time...
@@ -47,11 +49,22 @@ if (i % 2 === 0) {
 function add (x,y) { 
   return (x + y);
 }
-console.log(add(2,3));
+console.log(add(2, 3));
 
 // multiply function
 function multiply (x,y) {
   return (x * y);
 }
 
-console.log(multiply(2,3));
+console.log(multiply(2, 3));
+
+// array length checking
+console.log(animals.length);
+
+// display array value using index value
+console.log(animals[0]);
+
+// display all values in an array
+for (var j; j< (animals.length); j++) {
+  console.log(animals[j])
+}
