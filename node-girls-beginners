@@ -5,6 +5,7 @@ var second = 123;
 var third  = false;
 var happy  = false;
 var x      = 11
+var i      = 1
 
 // checking typeof functionality
 console.log(typeof (first),typeof (second),typeof (third)); // there must be a way to not have to repeat typeof each time...
@@ -12,7 +13,7 @@ console.log(typeof (first),typeof (second),typeof (third)); // there must be a w
 // displaying a variable
 console.log(artist);
 
-// using if/else statement for first time
+// using if/else statement for the first time
 if (happy === true) {
   // if I am happy show Craig David
   console.log(artist);
@@ -29,3 +30,12 @@ if (x % 2 === 0) {
   // otherwise x will be odd
   {console.log("odd");
   }
+
+//using a "for loop" for the first time
+for (var i; i<= 10; i++) {
+  console.log(i);
+}
+
+//and then doing the mini challenge to only show every second number
+if ( i % 2 === 0) for (var i; i<= 100; i++;) {
+  console.log(i);
