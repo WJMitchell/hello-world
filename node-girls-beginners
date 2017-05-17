@@ -7,7 +7,7 @@ var happy  = false;
 var x      = 11
 
 // checking typeof functionality
-console.log(typeof (first),typeof (second),typeof (third));
+console.log(typeof (first),typeof (second),typeof (third)); // there must be a way to not have to repeat typeof each time...
 
 // displaying a variable
 console.log(artist);
@@ -17,15 +17,15 @@ if (happy === true) {
   // if I am happy show Craig David
   console.log(artist);
 } else 
-  // if I am sad show No Craig David
+  // if I am not happy show No Craig David
   {console.log("No Craig David");
   }
 
 // using if/else to calculate if number is odd or even
 if (x % 2 === 0) {
-  // if x is devisible by 2 with no remainder, show even
+  // if x is devisible by 2 with no remainder it will be even
   console.log("even");
 } else 
-  // x will be odd
+  // otherwise x will be odd
   {console.log("odd");
   }
