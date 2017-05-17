@@ -6,7 +6,6 @@ var third  = false;
 var happy  = false;
 var x      = 11
 var i      = 1
-var v      = console.log(i)
 
 // checking typeof functionality
 console.log(typeof (first),typeof (second),typeof (third)); // there must be a way to not have to repeat typeof each time...
@@ -42,3 +41,17 @@ for (var i; i<= 100; i++) // looping to show numbers 1 to 100
 if (i % 2 === 0) {
   console.log(i); // if number is even, then show the number
 }
+
+// creating a function for the first time
+// add function
+function add (x,y) { 
+  return (x + y);
+}
+console.log(add(2,3));
+
+// multiply function
+function multiply (x,y) {
+  return (x * y);
+}
+
+console.log(multiply(2,3));
