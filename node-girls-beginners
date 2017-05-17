@@ -6,6 +6,7 @@ var third  = false;
 var happy  = false;
 var x      = 11
 var i      = 1
+var v      = console.log(i)
 
 // checking typeof functionality
 console.log(typeof (first),typeof (second),typeof (third)); // there must be a way to not have to repeat typeof each time...
@@ -31,11 +32,13 @@ if (x % 2 === 0) {
   {console.log("odd");
   }
 
-//using a "for loop" for the first time
-for (var i; i<= 10; i++) {
-  console.log(i);
-}
+// using a "for loop" for the first time (removed)
+//for (var i; i<= 10; i++) {
+//  console.log(i);
+//}
 
-//and then doing the mini challenge to only show every second number
-if ( i % 2 === 0) for (var i; i<= 100; i++;) {
-  console.log(i);
+// mini challenge to only show every second number
+for (var i; i<= 100; i++) // looping to show numbers 1 to 100
+if (i % 2 === 0) {
+  console.log(i); // if number is even, then show the number
+}
