@@ -8,6 +8,13 @@ var x      = 11;
 var i      = 1;
 var j      = 0
 var animals = ["tiger", "giraffe", "snake", "llama"];
+var person = {
+  firstName:   "Claire",
+  lastName:    "Mitchell",
+  occupation:  "Developer",
+  age:         27,
+  alive:       true
+}
 
 // checking typeof functionality
 console.log(typeof (first),typeof (second),typeof (third)); // there must be a way to not have to repeat typeof each time...
@@ -66,5 +73,12 @@ console.log(animals[0]);
 
 // display all values in an array
 for (var j; j< (animals.length); j++) {
-  console.log(animals[j])
+  console.log(animals[j]);
 }
+
+// calling a property of an Object
+console.log(person.firstName);
+
+// writing a sentence using some object properties
+console.log("Hi, my name is " + (person.firstName) + " " + (person.lastName) + ". I am " + (person.age) + " years old, and work as a " + (person.occupation) +".")
+
