@@ -8,6 +8,7 @@ var x      = 11;
 var i      = 1;
 var j      = 0;
 var k      = 0;
+var fb     = 1;
 var animals = ["tiger", "giraffe", "snake", "llama"];
 var person = {
   firstName:   "Claire",
@@ -115,6 +116,19 @@ console.log("Hi, my name is " + (person.firstName) + " " + (person.lastName) + "
 
 // looping through the sentences for all of the objects in the writers array
 for (var k; k< (writers.length); k++) {
-if  (writers[k].alive === true)
+if  (writers[k].alive === true);
   console.log("Hi, my name is " + (writers[k].firstName) + " " + (writers[k].lastName) + ". I am " + (writers[k].age) + " years old, and work as a " + (writers[k].occupation) +".");
+}
+
+// first attempt at FizzBuzz
+
+for (var fb; fb<= 100; fb++) { 
+if (fb % 15 === 0)
+  console.log("FizzBuzz"); else
+if (fb % 3 === 0)
+  console.log("Fizz"); else
+if (fb % 5 === 0)  
+  console.log("Buzz");
+  else
+  console.log(fb);
 }
