@@ -115,5 +115,6 @@ console.log("Hi, my name is " + (person.firstName) + " " + (person.lastName) + "
 
 // looping through the sentences for all of the objects in the writers array
 for (var k; k< (writers.length); k++) {
+if  (writers[k].alive === true)
   console.log("Hi, my name is " + (writers[k].firstName) + " " + (writers[k].lastName) + ". I am " + (writers[k].age) + " years old, and work as a " + (writers[k].occupation) +".");
 }
