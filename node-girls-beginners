@@ -145,3 +145,14 @@ for (var fb = 1; fb <= 100; fb++) {
     console.log(fb);
   }
 }
+
+// haystack challenge
+var haystack = ['hay', 'bail', 'word', 'needle', 'may', 'june'];
+function findNeedle (thing) {
+   for (var p = 0; p < thing.length; p++) {
+     if (thing[p] === 'needle') {
+     return "Found the needle at position" + " " + p;
+     } 
+   }
+}
+findNeedle(haystack);
